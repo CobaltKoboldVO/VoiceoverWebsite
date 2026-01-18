@@ -203,7 +203,8 @@
           display: flex;
           align-items: center;
           position: relative;
-          margin: 0 0 25px;
+          margin: 0 0 40px;
+          margin-top:60px
 
   
         }
@@ -224,6 +225,7 @@
             top: -2.5vw;
             background: #3d348b;
             margin: 0;
+            
             border-radius: 5px;
         }
         
@@ -369,6 +371,17 @@
             left: 0;
             transform: translateY(-50%);
             opacity: 0.7;
+        }
+
+        @media only screen and (max-width: 600px) {
+           .audio-name {
+
+            font-size: 1.8vh;
+
+            top: -4vh;
+
+            border-radius: 5px;
+        }
         }
       </style>
     `;

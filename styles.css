@@ -107,7 +107,7 @@ p{
     text-align: left;
     position: relative;
     margin: 0%;
-    margin-bottom: 60px;
+    margin-bottom: 5vmax;
     padding: 0%;
     font-size: 1.5em;
 }
@@ -321,3 +321,89 @@ a:hover {
 a:active {
   color:#184FF3;
 }
+
+@media only screen and (max-width: 600px) {
+    .tabs{
+        width: 85vw;
+        left:2.5vw;
+        border-width: 2px;
+        font-size: 1.5vh;
+    }
+    .tab-content{
+        width: 75.1vw;
+        left: 2.5vw;
+        font-size: 1.25vh;
+        padding-left:2vw;
+        border-width: 2px;
+        padding-right:8vw;
+    }
+    .active[data-tab-content]::after {
+        transform: scale(0.33, 0.33);
+        right:-36vw;
+        bottom: -26vh;
+    }
+
+    #footer-button{
+    width: 5vw;
+    }
+    #mascot{
+        width: 30vw;
+        
+    }
+
+    #actual-Logo{
+        
+        width: 55vw;
+        
+    
+    }
+    #Youtubelinks {
+        font-size: 1vh;
+        & .TextContent {
+            & p{
+                font-size: 1.5vw;
+                
+            
+            }
+            & a{
+                font-size: 150%;
+
+            }
+        }
+        & li{
+            font-size: 1vh;
+        }
+    }
+    
+    #Thumbnail{
+        height: 9vh;
+        width: auto;
+        margin:1px 1px 0px 0px;
+    }
+
+
+    .box{
+        width: 100%;
+        
+    }
+    #tagline{
+        width: 100%;
+        font-size: 2.2vh;
+        text-shadow: -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff, 0.5px 0.5px 0 #fff;
+    }
+    #button{
+        height: 7vw;
+    }
+
+    .tab.active{
+        border-width: 1px;
+        box-shadow: 3px 3px #003175;
+    }
+
+    .tab{
+        border-radius: 13px 13px 0px 0px;
+        padding:6px;
+    }
+}
+
+
