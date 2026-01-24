@@ -322,7 +322,7 @@ a:active {
   color:#184FF3;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .tabs{
         width: 85vw;
         left:2.5vw;
@@ -405,5 +405,6 @@ a:active {
         padding:6px;
     }
 }
+
 
 
