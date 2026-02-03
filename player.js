@@ -225,7 +225,7 @@
             top: -2.5vw;
             background: #3d348b;
             margin: 0;
-            
+            font-family: super_kindlyregular;
             border-radius: 5px;
         }
         
@@ -430,4 +430,5 @@
     }
 
     customElements.define('audio-player',AudioPlayer)
+
 }
