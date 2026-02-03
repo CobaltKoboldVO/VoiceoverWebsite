@@ -59,7 +59,7 @@ body{
 }
 
 .tab.active{
-    background-color: #7678ed;
+    background-color: #A47FFA;
     color: #f7b801;
     border-style: solid;
     border-color: white;
@@ -76,30 +76,31 @@ body{
 }
 
 .tab-content{
-    width: 61%;
+    width: 66%;
     display:flex;
     position: relative;
     left: 15%;
     
     margin-left: 0%;
     margin-right: 0%;
-    padding:1% 7%;
+    padding:1% 2%;
     padding-left: 2%;
     padding-bottom: 1%;
     border-style: solid;
     border-color: white;
-    border-top: none;;
-    background-color: #7678ed;
+    border-top: none;
+    background-color: #A47FFA;
     border-radius: 0% 0% 20px 20px;
-    min-height: 600px;
-    color: white;
-    text-shadow: 0px 0px 0.5em #4b4f9b;
+    min-height: 400px;
+    color: black    ;
+   /* text-shadow: 0px 0px 0.5em #4b4f9b;*/
     
     & h1{
-        font-weight: bolder;
+        font-family: "super_kindlyregular";
         margin:5px;
         font-size: 2.5em;
         margin-left: 0%;
+        font-weight: lighter;
     }
 }
 
@@ -107,11 +108,79 @@ p{
     text-align: left;
     position: relative;
     margin: 0%;
-    margin-bottom: 5vmax;
+    margin-bottom: 0.5em;
     padding: 0%;
     font-size: 1.5em;
 }
 
+
+.caption{
+        margin-bottom: 0px;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        border-radius: 0px 0px 10px 10px;
+        background-color: #3d348b;
+        color: white;
+        width: 98%;
+        font-size: 1.5vh;
+        padding-left: 2%;
+        
+    }
+
+.row {
+  
+  align-items: center;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 1%;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 23%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Content */
+.content {
+    position: relative;
+    background-color: #003175;
+  padding: 10px;
+  
+  border-radius: 10px;
+    min-height: 25vh;
+   & img{
+    border-radius: 10px;
+    
+   }
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 #tagline{
     margin: auto;
     flex: 1;
@@ -169,7 +238,7 @@ p{
     list-style-type: none;
     vertical-align: top;
     margin-bottom: 5%;
-    max-height: 100vw;
+    max-height: 50vw;
     overflow: auto;
     scrollbar-color: rgba(191, 191, 191, 0.5) rgba(255, 0, 0, 0);
     & .TextContent {
@@ -221,16 +290,18 @@ hr {
 #mascot{
     border: 0;
     padding: 0;
-    margin: 1em;
+    
     float: right;
-    width: 20%;
-    height: 20%;
+    width: auto;
+    height: 25vh;
     display: block;
     margin-left: auto;
 }
 
 #logo{
-
+    width: 80%;
+    margin:auto ;
+    margin-bottom: 10px;
     display: flex;
     padding: 0px;
 }
@@ -239,14 +310,16 @@ hr {
     content: "";
     display: flex;
     position: absolute;
-    right:-35%;
-    bottom: -5vw;
+    right:-13vw;
+    bottom: -4vh;
     background-image: url(kobold2_2resized.png);
-    width: 90%;
-    height: 90%;
-    max-width: 634px;
+    background-size: contain;
+    background-repeat: no-repeat    ;
+    width: 35vw;
+    height: 30vh;
+    max-width: 300px;
     max-height: 531px;
-    transform: scale(0.75,0.75);
+    
     aspect-ratio: auto;
     margin: 0%;
     z-index: 1;
@@ -255,8 +328,8 @@ hr {
 }
 
 #actual-Logo{
-    height: 40%;
-    width: 40%;
+    height: 25vh;
+    width: auto;
     display: block;
     
 }
@@ -281,6 +354,7 @@ hr {
     
     margin:auto;
     width: 85%;
+    
     background-image: url(LeftCloud.svg),url(RightCloud.svg);
     background-position: left,right;
     background-size: contain;
@@ -322,7 +396,7 @@ a:active {
   color:#184FF3;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
     .tabs{
         width: 85vw;
         left:2.5vw;
@@ -405,6 +479,5 @@ a:active {
         padding:6px;
     }
 }
-
 
 
