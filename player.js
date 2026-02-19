@@ -222,7 +222,7 @@
             overflow: hidden;
             white-space: nowrap;
             font-weight: 400;
-            top: -2.5vw;
+            top: -40px;
             background: #3d348b;
             margin: 0;
             font-family: super_kindlyregular;
@@ -382,6 +382,23 @@
 
             border-radius: 5px;
         }
+        .play-btn {
+            width: 20px;
+            min-width: 20px;
+            height: 20px;
+            background: url("Buttons.png") 0 center/500% 100% no-repeat;
+            appearance: none;
+            border: none;
+            text-indent: -999999px;
+            overflow: hidden;
+            margin: 5px;
+        }
+        .volume-bar {
+            width: 20px;
+            min-width: 20px;
+            height: 20px;
+
+        }
         }
       </style>
     `;
@@ -430,5 +447,4 @@
     }
 
     customElements.define('audio-player',AudioPlayer)
-
 }

@@ -17,14 +17,14 @@
 .tabs{
     width:70%;
     position: relative;
-    left: 15%;
+    
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     margin: 0;
     padding: 0;
     padding-top: 0.5%;
-
+    margin:auto;
     font-size: 2vw;
     background-color: #0047ab;
     color: #f7b801;
@@ -37,7 +37,7 @@
 
 body{
     padding: 0;
-    margin: 1% 5%;
+    margin: 0px;
     font-family: "Nunito", sans-serif;
 
     --angle: 0deg;  
@@ -79,10 +79,9 @@ body{
     width: 66%;
     display:flex;
     position: relative;
-    left: 15%;
     
-    margin-left: 0%;
-    margin-right: 0%;
+    margin: auto;
+    
     padding:1% 2%;
     padding-left: 2%;
     padding-bottom: 1%;
@@ -129,20 +128,22 @@ p{
     }
 
 .row {
-  
-  align-items: center;
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 /* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
-  padding: 1%;
+  padding: 0.1%;
 }
 
 /* Create four equal columns that floats next to each other */
 .column {
-  float: left;
-  width: 23%;
+  margin: auto;
+  
+  width: calc(25% - 20px);
 }
 
 /* Clear floats after rows */
@@ -155,41 +156,45 @@ p{
 
 /* Content */
 .content {
+    
     position: relative;
     background-color: #003175;
-  padding: 10px;
+  padding:10px;
   
   border-radius: 10px;
-    min-height: 25vh;
-   & img{
-    border-radius: 10px;
-    
-   }
-}
+    min-height: 250px;
 
+}
+.column img{
+    width:100%;
+    height: auto;
+}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
   .column {
-    width: 50%;
+    width: calc(50% - 20px);
+  }
+  .content{
+    min-height: 100px;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other 
 @media screen and (max-width: 600px) {
   .column {
-    width: 100%;
+    width: calc(100% - 20px);
   }
-}
+}*/
 #tagline{
     margin: auto;
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    
+    align-items: center;
     padding-left: 5%;
     padding-right: 5%;
-    width: 90%;
+    width: 95%;
     font-size: 2.90vw;
     color: #7678ED;
     list-style: none;
@@ -300,7 +305,7 @@ hr {
 
 #logo{
     width: 80%;
-    margin:auto ;
+    margin: auto;
     margin-bottom: 10px;
     display: flex;
     padding: 0px;
@@ -310,13 +315,13 @@ hr {
     content: "";
     display: flex;
     position: absolute;
-    right:-13vw;
-    bottom: -4vh;
+    right:-275px;
+    bottom: -8vh;
     background-image: url(kobold2_2resized.png);
     background-size: contain;
     background-repeat: no-repeat    ;
     width: 35vw;
-    height: 30vh;
+    height: 14vw;
     max-width: 300px;
     max-height: 531px;
     
@@ -331,6 +336,7 @@ hr {
     height: 25vh;
     width: auto;
     display: block;
+    float: left;
     
 }
 
@@ -363,7 +369,8 @@ hr {
 
 footer{
     margin-top: 40px;
-    
+    margin-left: auto;
+    margin-right: auto;
     
     & ul{
         display: flex;
@@ -397,37 +404,44 @@ a:active {
 }
 
 @media only screen and (max-width: 600px) {
+    body{
+        margin: 0px;
+    }
     .tabs{
         width: 85vw;
-        left:2.5vw;
-        border-width: 2px;
+        border-radius: 10px 10px 0px 0px;
+        border-width: 1px;
         font-size: 1.5vh;
     }
     .tab-content{
-        width: 75.1vw;
-        left: 2.5vw;
+        width: 81vw;
+        padding-bottom: 1vh;
         font-size: 1.25vh;
         padding-left:2vw;
-        border-width: 2px;
-        padding-right:8vw;
+        border-width: 1px;
+        padding-right:2vw;
     }
     .active[data-tab-content]::after {
-        transform: scale(0.33, 0.33);
-        right:-36vw;
-        bottom: -26vh;
+        margin: 0px;
+        padding: 0px;
+        right:-25px;
+        bottom: -30px;
+        width: 75px;
+        height: 75px;
     }
 
     #footer-button{
     width: 5vw;
     }
     #mascot{
-        width: 30vw;
-        
+        width: 100px;
+        height: auto;        
     }
 
     #actual-Logo{
         
         width: 55vw;
+        height: auto;
         
     
     }
@@ -457,13 +471,15 @@ a:active {
 
 
     .box{
-        width: 100%;
+        width: 90%;
+        margin: auto;
         
     }
     #tagline{
         width: 100%;
         font-size: 2.2vh;
         text-shadow: -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff, 0.5px 0.5px 0 #fff;
+        margin: 0;
     }
     #button{
         height: 7vw;
@@ -475,9 +491,17 @@ a:active {
     }
 
     .tab{
-        border-radius: 13px 13px 0px 0px;
-        padding:6px;
+        border-radius: 10px 10px 0px 0px;
+        padding:4px;
     }
+    footer{
+    width: 90%;
+    
+    
+    & ul{
+        padding: 0;
+    }
+}
 }
 
 
