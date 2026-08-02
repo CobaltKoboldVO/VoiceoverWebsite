@@ -213,7 +213,7 @@
              position: absolute;
             color: #fff;
             padding: 5px 10px;
-            font-size: 1.4vw;
+            font-size: 2em;
             width: 100%;
             left: 0;
             z-index: 2;
@@ -222,7 +222,7 @@
             overflow: hidden;
             white-space: nowrap;
             font-weight: 400;
-            top: -40px;
+            top: -1.5em;
             background: #3d348b;
             margin: 0;
             font-family: super_kindlyregular;
@@ -239,6 +239,7 @@
             text-indent: -999999px;
             overflow: hidden;
             margin: 5px;
+            z-index: 3;
         }
         
         .play-btn.playing {
@@ -373,12 +374,12 @@
             opacity: 0.7;
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 700px) {
            .audio-name {
 
-            font-size: 1.8vh;
+            font-size: 2em;
 
-            top: -4vh;
+            top: -1.5em;
 
             border-radius: 5px;
         }
