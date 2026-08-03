@@ -46,7 +46,10 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+  font-family: 'ARCO';
+  src: url('ARCO.ttf');
+}
 .tabs{
     width:70vw;
     position: relative;
@@ -179,26 +182,30 @@ p{
     grid-template-columns:1fr 2.5fr 1fr 0.75fr ;
     grid-template-rows: 6vw 3vw;
     padding: 0px;
+    justify-content: center;
 }
 #Name{
     grid-row: 1 / span 1;
     grid-column:2 / span 1;
-    font-size: 5vw;
-    font-family: "super_kindlyregular";
-    
+    font-size: 4.3vw;
+    font-family: "ARCO";
+    margin-bottom: 0vw;
     color: #7678ED;
-      -webkit-text-stroke-width: 0.1vw;
+      -webkit-text-stroke-width: 0.2vw;
   -webkit-text-stroke-color: rgb(255, 255, 255);
     font-weight: 450;
 }   
 #Trust{
     font-size: 3.1vw;
-    font-family: "super_kindlyregular";
+    font-family: "ARCO";
     grid-row: 2 /span 1;
     grid-column: 2 / span 1;
-          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-width: 0.1vw;
   -webkit-text-stroke-color: rgb(255, 255, 255);
   color: #7678ED;
+  justify-content: top;
+  align-items: top;
+  margin-bottom: 0vw;
 }
 
 .active[data-tab-content]::after {
@@ -506,6 +513,7 @@ a:active {
     .tabs{
         width: 90vw;
         border-width:2px;
+        font-size: 1.5vmax;
         }
     .tab.active{
         border-width: 1px;
@@ -520,21 +528,21 @@ a:active {
         font-size: 0.75em;
     }
     #Name{
-       font-size: 6.9vw;
+       font-size: 5.75vw;
        grid-column: 2 / span 1;
-       margin:0.2vw; 
+       margin-left:0.2vw; 
     }
     #Trust{
-        margin:0.2vw; 
-        font-size:4.5vw;
+        margin-left:0.2vw; 
+        font-size:4.1vw;
         grid-column: 2 / span 1; 
-              -webkit-text-stroke-width: 0.05vw;
+              -webkit-text-stroke-width: 0.1vw;
   -webkit-text-stroke-color: rgb(255, 255, 255);
     }
     .send-me-an-email{
-        padding-top: 0.25em;
-        padding-bottom: 0.25em;
-        font-size: 5vw;
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        font-size: 4vw;
     }
     #button-div{
         margin-left: 0em;
@@ -552,9 +560,10 @@ a:active {
         width:75vw;
     }
     #logo{
-        grid-template-rows: 8vw 4.5vw 8vw;
+        width: 98vw;
+        grid-template-rows: 8vw 6.5vw 8vw;
         margin-bottom: 2.5vh;
-        grid-template-columns:1fr 2.5fr 0.75fr ;
+        grid-template-columns:1fr 2.6fr 0.7fr ;
     }
     #mascot{
         grid-column: 3 / span 1;
@@ -564,12 +573,12 @@ a:active {
 
     }
     .active[data-tab-content]::after {
-        left: 80vw;
+        left: 95vw;
         width:25vw;
     }
 @media screen and (max-width: 1024px) {
         .active[data-tab-content]::after {
-        left: 75vw;
+        left: 80vw;
         width:25vw;
     } 
         footer{
