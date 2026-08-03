@@ -513,7 +513,7 @@ a:active {
     .tabs{
         width: 90vw;
         border-width:2px;
-        font-size: 1.5vmax;
+        font-size: 1.8vmax;
 
         }
     .tab.active{
@@ -528,36 +528,37 @@ a:active {
     .tab{
         margin-top: 5px;
         border-radius: 10px 10px 0px 0px;
-        
+        font-size: 2vmax;
     }
     .content{
         width:90vw;
         font-size: 0.75em;
     }
     #Name{
-       font-size: 5.75vw;
-       grid-column: 2 / span 1;
+       font-size: 6.9vw;
+       grid-column: 2 / span 2;
        margin-left:0.2vw; 
     }
     #Trust{
         margin-left:0.2vw; 
-        font-size:4.1vw;
-        grid-column: 2 / span 1; 
+        font-size:5vw;
+        grid-column: 2 / span 2; 
               -webkit-text-stroke-width: 0.1vw;
   -webkit-text-stroke-color: rgb(255, 255, 255);
     }
     .send-me-an-email{
         padding-top: 0.1em;
         padding-bottom: 0.1em;
-        font-size: 4vw;
+        font-size: 6.6vw;
     }
     #button-div{
         margin-left: 0em;
         margin-right:0em;
-        margin-top: 1vw;
-        margin-bottom: 1vw;
+        margin-top: auto;
+        margin-bottom: auto;
         grid-row:3/ span 1;
-        grid-column: 1/span 4;
+        grid-column: 1/span 2;
+        padding: 0;
     }
     #footer-button{
         width:8vw;
@@ -568,12 +569,15 @@ a:active {
     }
     #logo{
         width: 98vw;
-        grid-template-rows: 8vw 6.5vw 8vw;
+        grid-template-rows: 8vw 6.5vw 16vw;
         margin-bottom: 2.5vh;
-        grid-template-columns:1fr 2.6fr 0.7fr ;
+        grid-template-columns:1fr 2.6fr 1fr ;
     }
     #mascot{
         grid-column: 3 / span 1;
+        grid-row: 3/span 1;
+        height: 100%;
+        width:auto;
     }
     .Video-Slide{
             grid-auto-rows: 1.3fr 0.75fr;
@@ -581,7 +585,7 @@ a:active {
     }
     .active[data-tab-content]::after {
         left: 85vw;
-        width:30vw;
+        width:28vw;
     }
 @media screen and (max-width: 1024px) {
         .active[data-tab-content]::after {
