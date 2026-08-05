@@ -532,18 +532,19 @@ a:active {
     }
     .content{
         width:90vw;
-        font-size: 0.75em;
+        font-size: 0.5em;
     }
     #Name{
        font-size: 6.9vw;
        grid-column: 2 / span 2;
        margin-left:0.2vw; 
+       -webkit-text-stroke-width: 0.3vw;
     }
     #Trust{
         margin-left:0.2vw; 
         font-size:5vw;
         grid-column: 2 / span 2; 
-
+        -webkit-text-stroke-width: 0.3vw;
     }
     .send-me-an-email{
         padding-top: 0.1em;
@@ -584,7 +585,7 @@ a:active {
     }
     .active[data-tab-content]::after {
         left: 70vw;
-        width:25vw;
+        width:20vw;
     }
 @media screen and (max-width: 1024px) {
         .active[data-tab-content]::after {
