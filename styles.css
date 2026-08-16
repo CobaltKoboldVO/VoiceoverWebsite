@@ -511,17 +511,17 @@ a:active {
 
 @media screen and (max-width: 768px) {
     .tabs{
-        width: 90vw;
+        width: 96vw;
         border-width:2px;
         font-size: 1.3vmax;
 
         }
     .tab.active{
         border-width: 1px;
-            box-shadow: 10px 5px 0px -5px #003175;  
+            box-shadow: 0px 0px 0px 0px #003175;  
     }
     .tab-content{
-        width: 90vw;
+        width: 96vw;
         border-width: 2px;
 
     }
@@ -531,8 +531,13 @@ a:active {
         font-size: 2.2vmax;
     }
     .content{
-        width:90vw;
+        width:95vw;
+        padding: 10px;
         font-size: 0.5em;
+        
+        & h1 {
+            font-size: 4em;
+        }
     }
     #Name{
        font-size: 6.9vw;
@@ -566,12 +571,13 @@ a:active {
     footer{
         margin-top: 2vw;
         width:75vw;
+        margin-left: 1vw;
     }
     #logo{
         width: 98vw;
-        grid-template-rows: 8vw 6.5vw 16vw;
-        margin-bottom: 2.5vh;
-        grid-template-columns:1fr 2.6fr 1fr ;
+        grid-template-rows: 8vw 6.5vw 19vw;
+        margin-bottom: 1.5vh;
+        grid-template-columns:1fr 2.3fr 1.3fr ;
     }
     #mascot{
         grid-column: 3 / span 1;
@@ -584,12 +590,15 @@ a:active {
 
     }
     .active[data-tab-content]::after {
-        left: 70vw;
+        left: 10vw;
         width:20vw;
+    }
+    .audio-player{
+        margin: 10px 0 0 10px;
     }
 @media screen and (max-width: 1024px) {
         .active[data-tab-content]::after {
-        left: 80vw;
+        left: 70vw;
         width:30vw;
     } 
         footer{

@@ -203,8 +203,8 @@
           display: flex;
           align-items: center;
           position: relative;
-          margin: 0 0 40px;
-          margin-top:60px
+          margin: 0 0 0;
+          margin-top:5em;
 
   
         }
@@ -222,11 +222,13 @@
             overflow: hidden;
             white-space: nowrap;
             font-weight: 400;
-            top: -1.5em;
+            top: -2.5em;
             background: #3d348b;
             margin: 0;
             font-family: super_kindlyregular;
             border-radius: 5px;
+            margin-top:1em;
+            
         }
         
         .play-btn {
@@ -374,15 +376,7 @@
             opacity: 0.7;
         }
 
-        @media only screen and (max-width: 700px) {
-           .audio-name {
 
-            font-size: 2em;
-
-            top: -1.5em;
-
-            border-radius: 5px;
-        }
         .play-btn {
             width: 20px;
             min-width: 20px;
@@ -400,6 +394,15 @@
             height: 20px;
 
         }
+            @media screen and (max-width: 768px) {
+            .audio-player{
+                margin: 5em 3em 0 0px;
+            }
+            .audio-name {
+            font-size: 3em;
+            }
+
+            }
         }
       </style>
     `;
